@@ -3,7 +3,7 @@ git
 
 El sistema de de `control de versiones` utilizado en *Posma Group* es `git`_.
 
-Por agilidad, se recomienda generar agregar tu `clave pública ssh` tanto en tu
+Por agilidad, se recomienda generar y agregar tu `clave pública ssh` tanto en tu
 equipo, como en tu configuración de usuario del repositorio remoto.
 
 
