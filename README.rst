@@ -1,7 +1,9 @@
 Proyecto de Documentación de Posma Group
 =========================================
 
-|build-status| |docs|
+.. image:: https://readthedocs.org/projects/posmagroup/badge/?version=latest
+   :target: http://posmagroup.readthedocs.org/es/latest/?badge=latest
+   :alt: Documentation Status
 
 Instalación
 -----------
