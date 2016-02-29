@@ -50,3 +50,4 @@ llamada a **make** sin parámetros.
 .. _`Sphinx`: sphinx-doc.org
 .. _`documentación oficial`: http://www.sphinx-doc.org/en/stable/tutorial.html#install-sphinx
 .. _`reStructuredText`: http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html
+.. _`Read The Docs`: http://posmagroup.readthedocs.org/es/latest/
