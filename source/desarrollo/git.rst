@@ -14,16 +14,16 @@ En esta sección se hará una pequeña reseña sobre lo mínimo que se debe sabe
 para empezar a trabajar en el equipo de *Posma Group*, puedes ver la sección
 de :ref:`referencias-git` para conocer más a fondo estos comandos.
 
-init
-++++
+git init
+++++++++
 Inicializará el directorio actual como un nuevo repositorio `git`.
 
 .. code:: bash
 
     $ git init
 
-clone
-+++++
+git clone
++++++++++
 Comando que se usará para descargar una copia completa del repositorio del
 proyecto.
 
@@ -31,8 +31,8 @@ proyecto.
 
     $ git clone <dirección del repositorio>.git
 
-status
-++++++
+git status
+++++++++++
 Mostrará el estado actual del repositorio local, mostrando archivos nuevos,
 cambiados, o eliminados.
 
@@ -40,52 +40,52 @@ cambiados, o eliminados.
 
     $ git status
 
-add
-+++
+git add
+++++++++
 Agregará el archivo modificado al siguiente commit.
 
 .. code:: bash
 
     $ git add <nombre del archivo modificado>
 
-commit
-++++++
+git commit
+++++++++++
 Creará un nuevo `commit` en el repositorio, persistiendo los cambios
 realizados hasta el momento.
 
-La se recomienda realizar un `commit` por cada cambio que se esté desarrollando
+Se recomienda realizar un `commit` por cada cambio que se esté desarrollando
 de este modo será fácil deshacer nada más los cambios que introduzcan problemas.
 
 .. code:: bash
 
     $ git commit
 
-push
-++++
+git push
+++++++++
 Enviará los commits realizados al repositorio remoto y rama indicados en el comando.
 
 .. code:: bash
 
     $ git push origin <branch>
 
-pull
-++++
+git pull
+++++++++
 Descargará los últimos cambios de la rama indicada en el comando a la rama local actual.
 
 .. code:: bash
 
     $ git pull origin <branch>
 
-checkout
-+++++++++
+git checkout
+++++++++++++
 Este comando permite al usuario cambiar de una rama a otra, o de una versión a otra. 
 
 .. code:: bash
 
     $ git checkout <branch>
 
-revert
-++++++
+git revert
+++++++++++
 Dado uno o más commits existentes, este comando deshace los cambios agregados por
 esos commits, generando un nuevo commit para guardarlo.
 
@@ -93,8 +93,8 @@ esos commits, generando un nuevo commit para guardarlo.
 
     $ git revert <commit hash>
 
-merge
-+++++
+git merge
++++++++++
 Se usará para mezclar cambios de distintas. Introduce los cambios de `<branch>`
 a la rama actual.
 
@@ -144,7 +144,7 @@ Ramas de `feature`
 Son las ramas de características de producto. Debe crearse una rama `feature` por
 cada característica de producto a desarrollar.
 
-- El los cambios introducidos por esta rama solamente deben ser integrados a **develop**.
+- Los cambios introducidos por esta rama solamente deben ser integrados a **develop**.
 - Todos los cambios en **develop** deben ser mezclados en esta rama.
 - La convención para el nombramiento es `feature-*`, donde `*` es el nombre del feature que está siendo desarrollado.
 
@@ -159,7 +159,7 @@ Son las ramas de estabilización del próximo entregable. Debe crearse una rama
 estable del código.
 
 - Los cambios en **develop** deben ser introducidos en esta rama.
-- El los cambios introducidos por esta rama deben ser integrados a **develop** y **master**.
+- Los cambios introducidos por esta rama deben ser integrados a **develop** y **master**.
 - La convención para el nombramiento es `release-*`, donde `*` es el código del release (puede ser la fecha o la versión).
 
 Una vez mezclada una rama de `release` en `develop` y `master`, esta se puede eliminar.
@@ -172,7 +172,7 @@ Cuando se consigue un `bug` o problema en una versión estable, debe generarse u
 rama para corregirlo.
 
 - Los cambios en **develop** deben ser introducidos en esta rama.
-- El los cambios introducidos por esta rama deben ser integrados a **develop** y **master**.
+- Los cambios introducidos por esta rama deben ser integrados a **develop** y **master**.
 - La convención para el nombramiento es `fix-*`, donde `*` es el código del issue que se esstá corrigiendo.
 
 Una vez mezclada una rama de `hotfix` en `develop` y `master`, esta se puede eliminar.
