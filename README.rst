@@ -10,6 +10,7 @@ de texto `reStructuredText`_.
 Sphinx es una herramienta basada en Python, para la instalación del proyecto y todos sus requerimientos se incluye un archivo de requerimientos:
 
 .. code::
+
      $ pip install -f requirements.pip
 
 
