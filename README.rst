@@ -1,6 +1,8 @@
 Proyecto de Documentación de Posma Group
 =========================================
 
+|build-status| |docs|
+
 Instalación
 -----------
 
